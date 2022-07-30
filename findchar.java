@@ -31,9 +31,22 @@ class findchar {
 			}
 			System.out.println("Content Header");
 			System.out.println(heading);
-			System.out.println(theDataG);
+
+			for(int i=0; i <= theDataG.size() - 1; i++) {
+//				for(int j = 0; j <= char_count+1; j++) {
+					System.out.printf("%s", theDataG.get(i));
+//				}
+				System.out.printf("\n");
+			}
+			// System.out.println(theDataG);
 			System.out.printf("\n\n\nThe good data has %s records.\n", theDataG.size());
-			System.out.println(theDataB);
+			// System.out.println(theDataB);
+			for(int i=0; i <= theDataB.size() - 1; i++) {
+//				for(int j = 0; j <= char_count+1; j++) {
+					System.out.printf("%s", theDataB.get(i));
+//				}
+				System.out.printf("\n");
+			}
 			System.out.printf("\n\n\nThe bad data has %s records.\n", theDataB.size());
 
 			fileReader.close();
